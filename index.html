@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vishal Marble | Quality Marble for Every Home</title>
 
   <style>
@@ -14,47 +14,41 @@
     }
 
     body {
+      background: #ffffff;
       color: #222;
-      line-height: 1.6;
     }
 
     /* HEADER */
     header {
+      background: #000;
+      color: #fff;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 40px;
-      background: #ffffff;
-      border-bottom: 1px solid #eee;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     header img {
-      height: 45px;
+      height: 40px;
     }
 
     nav a {
-      margin-left: 20px;
+      color: #fff;
       text-decoration: none;
-      color: #222;
+      margin-left: 25px;
       font-weight: 500;
     }
 
     nav a:hover {
-      color: #f4b400;
+      text-decoration: underline;
     }
 
     /* HERO */
     .hero {
-      background:
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("https://i.pinimg.com/1200x/da/87/2f/da872f71e054e6c38556a42dc7aa82b8.jpg")
-        center / cover no-repeat;
-      padding: 140px 20px;
-      text-align: center;
+      background: #1f4d2e;
       color: #fff;
+      text-align: center;
+      padding: 120px 20px;
     }
 
     .hero h1 {
@@ -63,59 +57,67 @@
     }
 
     .hero p {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    .btn {
-      background: #f4b400;
-      color: #000;
-      padding: 12px 26px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: #e0a800;
-    }
-
-    /* FEATURES */
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      padding: 60px 40px;
-      text-align: center;
-    }
-
-    .feature h3 {
+      font-size: 16px;
       margin-bottom: 8px;
     }
 
-    /* SHOP INFO */
-    .shop-info {
-      padding: 60px 20px;
-      text-align: center;
-      background: #f9f9f9;
+    .hero .btn {
+      margin-top: 20px;
+      background: #000;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    .shop-info h2 {
-      margin-bottom: 15px;
+    .hero .btn:hover {
+      background: #222;
+    }
+
+    /* PRODUCTS */
+    .products {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .products h2 {
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 25px;
+      border-left: 5px solid #1f4d2e;
+    }
+
+    .product h3 {
+      margin-bottom: 8px;
     }
 
     /* FOOTER */
     footer {
-      background: #111;
-      color: #ccc;
-      padding: 25px 20px;
+      background: #000;
+      color: #fff;
       text-align: center;
-      font-size: 14px;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
     }
 
     footer p {
-      margin: 5px 0;
+      font-size: 14px;
+      margin: 4px 0;
     }
 
     /* RESPONSIVE */
@@ -144,56 +146,54 @@
     <nav>
       <a href="#">Home</a>
       <a href="#">Products</a>
-      <a href="#">Cart</a>
       <a href="#">Contact</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <h1>Quality Marble for Every Home</h1>
-    <p>Marble • Tiles • Tanki • Boring Fittings</p>
-    <a href="#" class="btn">Browse Products</a>
+    <h1>Vishal Marble</h1>
+    <p>Quality Marble for Every Home</p>
+    <p>Advance booking available • Pickup from shop</p>
+    <a href="#" class="btn">Book / Enquire</a>
   </section>
 
-  <!-- FEATURES -->
-  <section class="features">
-    <div class="feature">
-      <h3>Premium Marble</h3>
-      <p>5 types of quality marble</p>
-    </div>
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2>Our Products</h2>
 
-    <div class="feature">
-      <h3>Tiles Designs</h3>
-      <p>13 modern tile designs</p>
-    </div>
+    <div class="product-grid">
+      <div class="product">
+        <h3>Marble</h3>
+        <p>5 premium types of quality marble</p>
+      </div>
 
-    <div class="feature">
-      <h3>Tanki & Fittings</h3>
-      <p>3 tanki + 56 boring articles</p>
-    </div>
+      <div class="product">
+        <h3>Water Tanki</h3>
+        <p>3 strong & durable tanki varieties</p>
+      </div>
 
-    <div class="feature">
-      <h3>Advance Booking</h3>
-      <p>Pay advance & pickup from shop</p>
-    </div>
-  </section>
+      <div class="product">
+        <h3>Tiles</h3>
+        <p>13 modern tile designs</p>
+      </div>
 
-  <!-- SHOP INFO -->
-  <section class="shop-info">
-    <h2>Visit Our Shop</h2>
-    <p>Vishal Marble, Supriya Road</p>
-    <p>West Champaran, Bettiah, Bihar – 845438</p>
-    <p><strong>Phone:</strong> 8409949407</p>
-    <p><strong>Timings:</strong></p>
-    <p>Mon–Sat: 9:00 AM – 6:30 PM</p>
-    <p>Sunday: 9:00 AM – 4:00 PM</p>
+      <div class="product">
+        <h3>Boring Fittings</h3>
+        <p>56 articles (Article 1, Article 2, …)</p>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Vishal Marble. All Rights Reserved.</p>
-    <p>Pickup from shop only • Advance payment applicable</p>
+    <h3>Visit Our Shop</h3>
+    <p>📍 Vishal Marble, Supriya Road</p>
+    <p>West Champaran, Bettiah, Bihar – 845438</p>
+    <p>📞 Call: 8409949407</p>
+    <p>🕒 Timings:</p>
+    <p>Mon–Sat: 9:00 AM – 6:30 PM</p>
+    <p>Sunday: 9:00 AM – 4:00 PM</p>
   </footer>
 
 </body>
